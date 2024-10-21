@@ -20,7 +20,7 @@ public class UserController {
     public LoginResponseDTO login(@RequestBody LoginRequestDTO loginRequest) {
         try {
             String[] dataUser = userService.validarUser(loginRequest);
-            System.out.println("Resultado: " + Arrays.toString(dataUser));
+            System.out.println("Ingreso: " + Arrays.toString(dataUser));
             if (dataUser == null || dataUser.length == 0) {
                 return new LoginResponseDTO("There","Are","0","Users","In","dataUser X.X");
             }
