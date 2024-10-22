@@ -30,7 +30,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/list")
+    @GetMapping("/get-integrantes")
     public List<LoginResponseDTO> list() {
         try {
             List<String[]> userList = userService.listarUsers();
