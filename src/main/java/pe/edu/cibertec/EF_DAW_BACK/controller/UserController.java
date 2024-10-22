@@ -16,7 +16,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/login")
+    @PostMapping("/autenticar")
     public LoginResponseDTO login(@RequestBody LoginRequestDTO loginRequest) {
         try {
             String[] dataUser = userService.validarUser(loginRequest);
